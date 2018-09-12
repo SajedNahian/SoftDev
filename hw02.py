@@ -23,7 +23,7 @@ def pickRandomStudent():
 
     #keeps looping until user enters valid input
     while (not(choice in teams)):
-        choice = raw_input("Choose a team (w,m, or x): ")
+        choice = input("Choose a team (w,m, or x): ")
 
     students = KREWES[choice]
     print (students[random.randint(0,len(students)-1)])

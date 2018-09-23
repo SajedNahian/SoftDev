@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Occupations</title>
+</head>
+<body>
+    <h3>Your selected job: {{randomlySelectedJob}}</h3>
+    <table>
+        <tr>
+            {% for key in headings %}
+                <th>{{headings[key]}}</th>
+            {% endfor %}
+        </tr>
+        
+        {% for occupation in occupations %}
+            <tr>
+                <td><a href="https://www.google.com/search?q={{occupation}}">{{occupation}}</a></td>
+                <td>{{occupations[occupation]}}%</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

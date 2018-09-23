@@ -1,7 +1,7 @@
 #Sajed Nahian
 #SoftDev1 pd6
-#K08 -- Fill Yer Flask
-#2018-09-20
+#K10: Jinja Tuning
+#2018-09-24
 
 from flask import Flask, render_template
 import hw06

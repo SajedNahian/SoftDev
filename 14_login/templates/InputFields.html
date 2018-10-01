@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	<form action="/auth" method="POST">
+		{% if login_message %}
+			<b><p>{{login_message}}</p></b>
+		{% endif %}
+		Username:
+		<input type="text" name="username" minlength="4" maxlength="12"><br>
+		Password:
+		<input type="password" name="password" minlength="4" maxlength="12"><br>
+		<input type="submit" value="Register">
+	</form>
+</body>
+</html>

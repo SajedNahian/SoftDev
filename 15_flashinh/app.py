@@ -28,7 +28,7 @@ def auth_page():
 	else:
 		if request.form['username'] != test_username:
 			flash("Invalid username")
-		else:
+		if request.form['password'] != test_password:
 			flash("Invalid password")
 	return redirect(url_for("input_field_page"))
 

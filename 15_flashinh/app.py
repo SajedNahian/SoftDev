@@ -1,7 +1,7 @@
 #ShowMeTheCode - Sajed Nahian Brian Lee
 #SoftDev1 pd6
-#K14: Do I Know You? 
-#2018-10-01
+#K15: Oh yes, perhaps I do…  
+#2018-10-02
 
 from flask import Flask, render_template, request, session, url_for, redirect, flash
 import os

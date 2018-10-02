@@ -1,0 +1,11 @@
+{% extends "Base.html"%}
+
+{% block title %} Logged In Page {%endblock%}
+{% block content %}
+	<h2>Logged in as: {{username}}</h2>
+		<form action="/logout">
+			<input type="Submit" value="Logout">
+		</form>
+	</body>
+{% endblock %}
+

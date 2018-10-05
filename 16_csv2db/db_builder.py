@@ -47,7 +47,7 @@ def closeDB ():
 	db.commit() #save changes
 	db.close()  #close database
 
-coursesHeader = {"name":"TEXT","grades":"INTEGER","id":"INTEGER"}
+coursesHeader = {"code":"TEXT","grades":"INTEGER","id":"INTEGER"}
 createTableFromCSV("courses.csv", "coursestable", coursesHeader)
 
 peepsHeader = {"name": "TEXT", "age": "INTEGER", "id": "INTEGER"}

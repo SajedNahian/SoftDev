@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Web Page</title>
+</head>
+<body>
+	<h1>OMDb Movies API</h1>
+	<h2>Look at page {{pageNum}} of search query '{{query}}'</h2>
+	<h3>Play around with the variables in app.py to observe the effects!</h3>
+	{% for movie in movies %}
+		<p>{{movie.Title}}</p>
+		<img src="{{movie.Poster}}">
+		<hr>
+	{% endfor %}
+</body>
+</html>
